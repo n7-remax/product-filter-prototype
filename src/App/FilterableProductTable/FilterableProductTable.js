@@ -8,7 +8,7 @@ class FilterableProductTable extends Component {
         this.state = { filterText: '', inStockOnly: false };
 
         this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
-        this.handleinStockChange = this.handleinStockChange.bind(this);
+        this.handleInStockChange = this.handleInStockChange.bind(this);
 
     }
 
@@ -16,7 +16,7 @@ class FilterableProductTable extends Component {
         this.setState({ filterText: filterText })
     }
 
-    handleinStockChange(inStockOnly) {
+    handleInStockChange(inStockOnly) {
         this.setState({ inStockOnly: inStockOnly })
     }
 
@@ -27,7 +27,7 @@ class FilterableProductTable extends Component {
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}
                     onFilterTextChange={this.handleFilterTextChange} 
-                    onInStockChange={this.handleinStockChange}/>
+                    onInStockChange={this.handleInStockChange}/>
 
                 <ProductTable
                     products={this.props.products}
