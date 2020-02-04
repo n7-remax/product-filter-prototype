@@ -5,7 +5,7 @@ import ProductTable from './Product/ProductTable'
 class FilterableProductTable extends Component {
     constructor(props) {
         super(props)
-        this.state = { filterText: 'ball', inStockOnly: false }
+        this.state = { filterText: '', inStockOnly: false }
     }
     render() {
         return (
